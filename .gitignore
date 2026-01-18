@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+env/
+.env
+.streamlit/
+!.streamlit/config.toml
+faiss_index/
+*.faiss
+*.pkl
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
