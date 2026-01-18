@@ -49,7 +49,7 @@ def main():
                     st.error(f"Error: {e}")
 
         st.divider()
-        st.header("2. Voice Input")
+        st.header("Voice Input")
         st.write("Click to record, click again to stop.")
         
         # Voice recorder widget
