@@ -17,6 +17,7 @@ class Config:
     REPO_ID = "google/flan-t5-large"
     HF_ENDPOINT_URL="https://router.huggingface.co/hf-inference/models"
     MODEL_NAME = "llama-3.1-8b-instant"
+    GROQ_WHISPER_MODEL_NAME = "whisper-large-v3"
     TEMPERATURE = 0.5
     MAX_NEW_TOKENS = 512
     RETURN_FULL_TEXT = False

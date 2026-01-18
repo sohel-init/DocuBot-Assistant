@@ -3,7 +3,7 @@ import os
 import tempfile
 from modules.ingestion import DocumentProcessor
 from modules.rag_engine import RAGEngine
-from modules.voice import transcribe_audio
+from modules.voice import transcribe_audio, transcribe_audio_with_groq
 from streamlit_mic_recorder import mic_recorder
 
 # Page Config
@@ -65,7 +65,7 @@ def main():
 
     # Check for voice input
     if audio_data:
-        transcribed_text = transcribe_audio(audio_data['bytes'])
+        transcribed_text = transcribe_audio_with_groq(audio_data['bytes']) #transcribe_audio(audio_data['bytes'])
         if transcribed_text:
             final_prompt = transcribed_text
         else:
